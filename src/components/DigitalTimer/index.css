@@ -1,0 +1,159 @@
+* {
+  font-family: 'Roboto';
+}
+.bg_container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-position: center;
+}
+.app_container {
+  background-image: linear-gradient(to right, #ffffff, #cffcf1);
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 16px 0px #bfbfbf;
+}
+.heading {
+  color: #0f172a;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+.timer_container {
+  display: flex;
+  justify-content: space-around;
+  justify-content: center;
+  width: 80%;
+  height: 80%;
+  padding: 10px;
+}
+.img_container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png');
+  height: 500px;
+  width: 500px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 1;
+  margin-left: -30px;
+}
+.timer_status_container {
+  background-color: #ffffff;
+  width: 120px;
+  height: 120px;
+  border-radius: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 1;
+  margin-left: 20%;
+  flex-shrink: 1;
+}
+.timer_count {
+  color: #00d9f5;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+}
+.timer_status {
+  color: #0f172a;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+.timer_controller {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.timer_controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.limit_controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn_img {
+  width: 20px;
+  cursor: pointer;
+}
+.btn_name {
+  color: #0f172a;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 5px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.count_show {
+  color: #0f172a;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #00d9f5;
+  width: 50px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 5px;
+}
+.limit_para {
+  color: #1e293b;
+  font-size: 12px;
+  font-weight: bold;
+}
+.limit_btn {
+  color: #0f172a;
+  font-size: 24px;
+  font-weight: bold;
+  border: 0;
+  background-color: transparent;
+  margin: 5px;
+  cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .app_container {
+    height: 100%;
+    width: 100%;
+  }
+  .heading {
+    font-size: 20px;
+  }
+  .timer_container {
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+  }
+  .img_container {
+    height: 60%;
+    width: 100%;
+    padding: 0;
+    margin-left: -30px;
+  }
+  .timer_status_container {
+    height: 100px;
+    width: 100px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  .timer_controller {
+    justify-content: start;
+    padding-top: 10px;
+    height: 50%;
+    width: 100%;
+  }
+}
